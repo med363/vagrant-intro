@@ -128,3 +128,8 @@ Vagrant.configure("2") do |config|
   # SHELL
 end
 ```
+
+### pour executer le fichier vagrant
+```bach
+vagrant up
+```
