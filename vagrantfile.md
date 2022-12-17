@@ -1,7 +1,9 @@
-``bash
+### initialiser un projet vagrant
+
+```bash
 vagrant init
 ```
-
+### modifier le conteenu du fichier Vagrantfile
 ```bash
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
@@ -54,16 +56,16 @@ Vagrant.configure("2") do |config|
     service ssh restart
    SHELL
   end
-   config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "playbook.yml"
-    ansible.groups = {
-      "master" => [node[:hostname] == "master"],
+ #  config.vm.provision "ansible" do |ansible|
+ #   ansible.playbook = "playbook.yml"
+ #   ansible.groups = {
+ #     "master" => [node[:hostname] == "master"],
 #      "group2" => ["machine2"],
-      "webs" => [node[:hostname] == "wb[1:2]"],
+#      "webs" => [node[:hostname] == "wb[1:2]"],
 #      "group4" => ["other_node-[a:d]"], # silly group definition
-      "all_groups:children" => ["master", "webs"]
-      }
-   end
+#      "all_groups:children" => ["master", "webs"]
+#      }
+#   end
  end
    
 
