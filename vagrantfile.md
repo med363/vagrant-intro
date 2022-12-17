@@ -1,3 +1,7 @@
+``bash
+vagrant init
+```
+
 ```bash
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
