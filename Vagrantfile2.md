@@ -15,6 +15,10 @@ config.vm.define "web2" do |web2|
  web2.vm.box = "ubuntu/trusty64"
 end
 ```
+### compile vagrantfile
+```bash
+vagrant validate
+```
 ### execute vagrantfile
 ```bash
 vagrant up
