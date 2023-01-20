@@ -50,3 +50,8 @@ vagrant reload
 ip a 
 ```
 ### we show address get
+### and if we enter in 
+```bash
+/etc/hosts
+```
+### we show that vagrant associate to that ip address DNS
